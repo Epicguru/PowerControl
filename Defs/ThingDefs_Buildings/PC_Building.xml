@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="PC_Building" ParentName="BuildingBase" Abstract="True">
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>PowerControl</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <altitudeLayer>Building</altitudeLayer>
+    <tickerType>Normal</tickerType>        
+  </ThingDef>
+</Defs>

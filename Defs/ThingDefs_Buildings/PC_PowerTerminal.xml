@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PC_Building">
+
+    <defName>PC_PowerTerminal</defName>
+    <thingClass>PowerControl.Buildings.PowerTerminal</thingClass>
+
+    <label>power terminal</label>
+    <description>A station that is used to track and control power useage and production, among other functions.</description>
+
+    <!-- Main stuff -->
+    <size>(3, 1)</size>
+    <stealable>false</stealable>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.6</Flammability>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>150</Mass>
+      <Beauty>5</Beauty>
+    </statBases>
+
+    <!-- Allow minify -->
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+
+    <!-- Cost to build -->
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>15</ComponentIndustrial>
+    </costList>
+
+    <!-- Graphics -->
+    <graphicData>
+      <texPath>PowerControl/Buildings/PowerTerminal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 1)</drawSize>
+    </graphicData>  
+
+    <!-- Comps... -->
+    <comps>
+      <li Class="CompProperties_Power">
+          <compClass>CompPowerTrader</compClass>
+          <basePowerConsumption>50</basePowerConsumption>
+          <transmitsPower>true</transmitsPower> <!-- This gives it a power grid. Ensures that it will be connected to a particular power net. -->
+      </li>
+    </comps>
+
+  </ThingDef>
+</Defs>
