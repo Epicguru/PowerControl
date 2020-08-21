@@ -36,6 +36,8 @@ namespace PowerControl.Buildings
                 // Clicked! Open the UI. This will automatically open a new window or focus an existing one.
                 UI_PowerTerminal.Open(this);
             };
+
+            yield return openUI;
         }
 
         public override string GetInspectString()

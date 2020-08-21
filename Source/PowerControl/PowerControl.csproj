@@ -58,9 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buildings\PowerTerminal.cs" />
+    <Compile Include="LoopHook.cs" />
     <Compile Include="ModCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\UI_PowerTerminal.cs" />
+    <Compile Include="Utils\PowerConvert.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
